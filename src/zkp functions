@@ -1,0 +1,14 @@
+use rand::Rng; // Add this at the top for random number generation
+
+fn generate_proof(prover_profile: &DnaProfile, target_profile: &DnaProfile) -> Option<bool> {
+    // Simulate proof generation
+    if prover_profile.matches(target_profile) {
+        Some(true) // Proof of match
+    } else {
+        Some(false) // Proof of non-match
+    }
+}
+
+fn verify_proof(proof: Option<bool>) -> bool {
+    proof.unwrap_or(false)
+}
