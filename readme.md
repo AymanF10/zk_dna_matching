@@ -25,7 +25,6 @@ This project implements a simple DNA profile matching system in Rust. It defines
    ```bash
    cargo build
    ```
-
 3. Run the project:
    ```bash
    cargo run
