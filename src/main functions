@@ -1,4 +1,5 @@
 fn main() {
+
     let target_profile = DnaProfile::new(vec![10, 5, 7]); // Example target profile
     let matching_profile = DnaProfile::new(vec![10, 5, 7]); // Matching profile
     let non_matching_profile = DnaProfile::new(vec![9, 6, 8]); // Non-matching profile
@@ -11,5 +12,7 @@ fn main() {
     // Test non-matching scenario
     let proof = generate_proof(&non_matching_profile, &target_profile);
     let result = verify_proof(proof);
+
     println!("Non-Matching Profile Proof Verified: {}", result); // Should print false
+    
 }
